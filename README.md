@@ -1,4 +1,9 @@
 # 🛒 AI E-commerce Assistant
+![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)  
+![FastAPI](https://img.shields.io/badge/FastAPI-Framework-teal.svg)  
+![SQLite](https://img.shields.io/badge/SQLite-DB-lightgrey.svg)  
+![Docker](https://img.shields.io/badge/Docker-ready-blue.svg)  
+![License](https://img.shields.io/badge/license-MIT-green.svg)  
 
 An AI-powered recommendation system for e-commerce platforms.
 Built with FastAPI + Python + ML, it provides:
