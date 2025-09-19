@@ -1,0 +1,11 @@
+product_id,name,category,price,tags,description
+p1,Wireless Mouse,Accessories,25.99,mouse;wireless,Compact wireless mouse with ergonomic design
+p2,Mouse Pad,Accessories,7.99,mouse;pad,Non-slip mouse pad with wrist support
+p3,Mechanical Keyboard,Accessories,55.00,keyboard;mechanical,RGB mechanical keyboard with tactile switches
+p4,USB-C Cable,Cables,9.99,cable;usb-c,Durable 1m USB-C cable
+p5,HDMI Cable,Cables,12.50,cable;hdmi,High-speed HDMI cable 2m
+p6,Laptop Stand,Accessories,29.99,stand;laptop,Adjustable aluminum laptop stand
+p7,Headphones,Audio,45.00,headphones;audio,Over-ear wireless headphones
+p8,Webcam,Accessories,39.00,webcam;video,HD webcam for streaming and meetings
+p9,Laptop Sleeve,Accessories,18.00,sleeve;laptop,Protective neoprene laptop sleeve 13inch
+p10,USB Hub,Accessories,15.00,hub;usb,4-port USB hub with power
