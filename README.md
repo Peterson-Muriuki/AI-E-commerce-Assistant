@@ -95,7 +95,7 @@ Author
 
 Peterson Muriuki
 📧 [pitmuriuki@gmail.com](mailto:pitmuriuki@gmail.com)
-🔗 [LinkedIn](https://www.linkedin.com/in/peterson-muriuki/)
+🔗 [LinkedIn]([https://www.linkedin.com/in/peterson-muriuki/](https://www.linkedin.com/in/peterson-muriuki-5857aaa9/))
 🐙 [GitHub](https://github.com/Peterson-Muriuki)
 
 ⚡ Ready to deploy AI-powered recommendations into your e-commerce app!
