@@ -13,7 +13,6 @@ def run_query(query, params=None):
     conn.close()
     return rows
 
-# --- Helper search functions ---
 def get_products():
     return run_query("SELECT * FROM products;")
 
