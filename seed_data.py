@@ -4,7 +4,7 @@ import sqlite3
 conn = sqlite3.connect("ecommerce.db")
 cursor = conn.cursor()
 
-# --- Create tables ---
+
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS products (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -34,7 +34,6 @@ CREATE TABLE IF NOT EXISTS transactions (
 )
 """)
 
-# --- Seed sample data ---
 products = [
     ("Laptop", 75000, 10),
     ("Smartphone", 35000, 25),
@@ -48,17 +47,16 @@ customers = [
 ]
 
 transactions = [
-    (1, 1, 1, 75000),   # Alice buys a Laptop
-    (2, 2, 2, 70000),   # Bob buys 2 Smartphones
-    (3, 3, 3, 15000),   # Charlie buys 3 Headphones
+    (1, 1, 1, 75000),   
+    (2, 2, 2, 70000),   
+    (3, 3, 3, 15000),   
 ]
 
 cursor.executemany("INSERT INTO products (name, price, stock) VALUES (?, ?, ?)", products)
 cursor.executemany("INSERT INTO customers (name, email) VALUES (?, ?)", customers)
 cursor.executemany("INSERT INTO transactions (customer_id, product_id, quantity, total) VALUES (?, ?, ?, ?)", transactions)
 
-# Save changes and close
 conn.commit()
 conn.close()
 
-print("Database seeded successfully 🚀")
+print("Database seeded successfully")
