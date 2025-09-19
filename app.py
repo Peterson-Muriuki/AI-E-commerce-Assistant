@@ -12,7 +12,6 @@ def get_db_connection():
 def root():
     return {"message": "AI E-commerce Assistant - API with SQLite running"}
 
-# --- Existing endpoints ---
 @app.get("/products")
 def list_products():
     conn = get_db_connection()
@@ -34,7 +33,6 @@ def list_transactions():
     conn.close()
     return [dict(row) for row in transactions]
 
-# --- New endpoint: Customer Summary ---
 @app.get("/customers/{customer_id}/summary")
 def customer_summary(customer_id: str):
     conn = get_db_connection()
@@ -59,7 +57,6 @@ def customer_summary(customer_id: str):
     else:
         return {"error": f"No summary found for customer_id {customer_id}"}
 
-# --- New endpoint: Customer Transactions (Purchase History) ---
 @app.get("/customers/{customer_id}/transactions")
 def customer_transactions(customer_id: str):
     conn = get_db_connection()
