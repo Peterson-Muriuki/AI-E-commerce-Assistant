@@ -66,34 +66,34 @@ def get_customer_summary(customer_id):
     return run_query(query, (customer_id,))
 
 if __name__ == "__main__":
-    print("📦 All Products:")
+    print("All Products:")
     for row in get_products():
         print(row)
 
-    print("\n👤 All Customers:")
+    print("\n All Customers:")
     for row in get_customers():
         print(row)
 
-    print("\n💳 All Transactions:")
+    print("\n All Transactions:")
     for row in get_transactions():
         print(row)
 
-    print("\n🔎 Search Product by Name ('Mouse'):")
+    print("\n Search Product by Name ('Mouse'):")
     for row in find_product_by_name("Mouse"):
         print(row)
 
-    print("\n⚠️ Products below stock 10:")
+    print("\n Products below stock 10:")
     for row in products_below_stock(10):
         print(row)
 
-    print("\n📧 Find Customer by Email ('alice@example.com'):")
+    print("\n Find Customer by Email ('alice@example.com'):")
     for row in find_customer_by_email("alice@example.com"):
         print(row)
 
-    print("\n🛒 Transaction history for Alice (cust1):")
+    print("\n Transaction history for Alice (cust1):")
     for row in get_customer_transactions("cust1"):
         print(row)
 
-    print("\n📊 Purchase summary for Alice (cust1):")
+    print("\n Purchase summary for Alice (cust1):")
     for row in get_customer_summary("cust1"):
         print(row)
