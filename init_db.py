@@ -1,10 +1,8 @@
 import sqlite3
 
-# Connect to (or create) the database
 conn = sqlite3.connect("ecommerce.db")
 cursor = conn.cursor()
 
-# --- Create tables ---
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS products (
     id TEXT PRIMARY KEY,
@@ -34,7 +32,6 @@ CREATE TABLE IF NOT EXISTS transactions (
 )
 """)
 
-# --- Insert sample data ---
 cursor.executemany(
     "INSERT OR IGNORE INTO products (id, name, price, stock) VALUES (?, ?, ?, ?)",
     [
@@ -69,4 +66,4 @@ cursor.executemany(
 conn.commit()
 conn.close()
 
-print("Database initialized successfully 🚀 (with stock column).")
+print("Database initialized successfully.")
